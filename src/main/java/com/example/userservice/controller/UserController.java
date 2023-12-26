@@ -20,7 +20,7 @@ import com.example.userservice.vo.ResponseUser;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/user-service")
 public class UserController {
 	private Environment env;
 	private UserService userService;
