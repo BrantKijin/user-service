@@ -18,10 +18,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 	private Environment env;
-	@Bean
-	public BCryptPasswordEncoder bCryptPasswordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
+
 
 	public WebSecurity(Environment env, UserService userService, BCryptPasswordEncoder bCryptPasswordEncoder) {
 		this.env = env;
