@@ -1,6 +1,9 @@
 package com.example.userservice.dto;
 
 import java.util.Date;
+import java.util.List;
+
+import com.example.userservice.vo.ResponseOrder;
 
 public class UserDto {
 	private String email;
@@ -10,6 +13,16 @@ public class UserDto {
 	private Date createdAt;
 
 	private String encryptedPwd;
+
+	private List<ResponseOrder> orders;
+
+	public List<ResponseOrder> getOrders() {
+		return orders;
+	}
+
+	public void setOrders(List<ResponseOrder> orders) {
+		this.orders = orders;
+	}
 
 	public UserDto() {
 	}

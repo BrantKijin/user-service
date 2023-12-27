@@ -12,18 +12,8 @@ public class ResponseOrder {
 
 	private String orderId;
 
-	public ResponseOrder() {
-	}
 
-	public ResponseOrder(String productId, Integer qty, Integer unitPrice, Integer totalPrice, Date createdAt,
-		String orderId) {
-		this.productId = productId;
-		this.qty = qty;
-		this.unitPrice = unitPrice;
-		this.totalPrice = totalPrice;
-		this.createdAt = createdAt;
-		this.orderId = orderId;
-	}
+
 
 	public String getProductId() {
 		return productId;
